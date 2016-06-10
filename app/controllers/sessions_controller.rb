@@ -6,6 +6,10 @@ class SessionsController < ApplicationController
   def new_twitter
     redirect_to '/auth/twitter'
   end
+  def new_google
+    redirect_to '/auth/google_oauth2'
+  end
+
   def create
     auth = request.env["omniauth.auth"]
     user = User.where(:provider => auth['provider'],

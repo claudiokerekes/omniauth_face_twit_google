@@ -19,6 +19,7 @@ gem 'high_voltage'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
+gem "omniauth-google-oauth2"
 gem 'pg'
 group :development do
   gem 'better_errors'
